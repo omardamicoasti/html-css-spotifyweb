@@ -25,7 +25,7 @@ a {
   font-weight: bold;
 }
 .padding_top_big {
-  padding-top: 100px;
+  padding-top: 80px;
 }
 .padding_top_standard {
   padding-top: 40px;
@@ -37,21 +37,17 @@ a {
   padding-left: 40px;
 }
 .padding_top_small {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 .padding_bottom_small {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
-.padding_left_small {
-  padding-left: 20px;
-}
-
 /* fine regole generali per la pagina*/
 .wrapper {
   width: 100%;
   height: 100vh;
 }
-
+/* footer */
 footer {
   position: fixed;
   bottom: 0;
@@ -69,7 +65,8 @@ footer > div {
   height: 50%;
   border: 1px solid black;
 }
-
+/* fine footer */
+/* nav */
 .main_nav {
   position: fixed;
   top: 0;
@@ -89,9 +86,6 @@ footer > div {
   height: 65px;
   background-color: purple;
 }
-/* .main_nav_top, .main_nav_bottom {
-  min-height: 200px;
-} */
 .main_nav_top_logo, .main_nav_top_menu {
   height: 50%;
 }
@@ -99,33 +93,47 @@ footer > div {
   height: calc(100% - 165px - 65px);
   overflow-y: auto;
 }
+.main_nav_top_logo img {
+  width: 80%;
+}
+.main_nav {
+  padding-left: 10px;
+}
+.main_nav_top, .main_nav_center {
+  padding: 10px 0;
+}
 
+.main_nav_center ul li, .main_nav_center p {
+  padding-bottom: 10px;
+}
+/* fine nav */
+/* contenuto */
 .main_content {
   width: calc(100% - 200px);
   height: calc(100% - 90px);
   margin-left: 200px;
   background-color: grey;
+  padding-bottom: 70px;
 }
 .main_content_menu ul li {
   text-transform: uppercase;
-  margin: 0 10px;
+  font-weight: bold;
+  margin: 0 20px;
 }
 .main_content_menu ul li a {
   color: lightgrey;
 }
-
 .main_content_menu ul {
   display: flex;
   justify-content: center;
 }
-
 .main_content_boxes {
   display: flex;
   flex-wrap: wrap;
 }
 .main_content_box {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -163,21 +171,42 @@ footer > div {
   font-size: 0.8em;
   padding-top: 10px;
 }
+.main_content_popular .main_content_image {
+  border-radius: 50%;
+}
+/* contenuto */
 
 
 
 
-
-
-
-
-
-
+/* gestione scomparsa menu e area playlist */
 @media screen and (max-height: 400px) {
   .main_nav .main_nav_bottom {
     display: none;
   }
   .main_nav .main_nav_center {
     height: calc(100% - 165px);
+  }
+}
+
+/* smartphone */
+@media screen and (max-width: 767px) {
+
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* desktop */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* large desktop */
+@media screen and (min-width: 1200px) {
+  * {
+
   }
 }
