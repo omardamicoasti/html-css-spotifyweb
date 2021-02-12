@@ -8,24 +8,50 @@
 /* regole generali per la pagina*/
 body {
   font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
 }
 .clearfix {
 	content: "";
 	display: table;
 	clear: both;
 }
+.relative {
+  position: relative;
+}
+.layover {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 80px;
+  background: rgba(0,0,0,.5);
+}
+.upgrade {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 8px 8px;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: bold;
+  border: 1px solid white;
+  border-radius: 25px;
+  z-index: 999;
+}
+.upgrade a {
+  color: white;
+}
 li {
   list-style: none;
 }
 a {
   text-decoration: none;
-  color: black;
 }
 .bold {
   font-weight: bold;
 }
 .padding_top_big {
-  padding-top: 80px;
+  padding-top: 100px;
 }
 .padding_top_standard {
   padding-top: 40px;
@@ -41,6 +67,18 @@ a {
 }
 .padding_bottom_small {
   padding-bottom: 10px;
+}
+.text-white {
+  color: white;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.border_bottom {
+  border-bottom: 1px solid white;
 }
 /* fine regole generali per la pagina*/
 .wrapper {
@@ -75,9 +113,15 @@ footer > div {
   height: calc(100% - 90px);
   background-color: royalblue;
 }
-.main_nav div {
-  border: 1px solid black;
+.main_nav, .main_nav a {
+  color: lightgrey;
 }
+.main_nav li {
+  text-transform: capitalize;
+}
+/* .main_nav div {
+  border: 1px solid black;
+} */
 .main_nav_top {
   height: 165px;
   background-color: purple;
@@ -103,7 +147,7 @@ footer > div {
   padding: 10px 0;
 }
 
-.main_nav_center ul li, .main_nav_center p {
+.main_nav_top_menu ul li, .main_nav_center ul li, .main_nav_center p {
   padding-bottom: 10px;
 }
 /* fine nav */
@@ -119,6 +163,7 @@ footer > div {
   text-transform: uppercase;
   font-weight: bold;
   margin: 0 20px;
+  padding-bottom: 20px;
 }
 .main_content_menu ul li a {
   color: lightgrey;
@@ -126,6 +171,7 @@ footer > div {
 .main_content_menu ul {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .main_content_boxes {
   display: flex;
@@ -138,7 +184,7 @@ footer > div {
   flex-direction: column;
   align-items: center;
   border: 1px solid black;
-  margin: 15px 15px;
+  margin: 10px 10px;
 }
 .main_content_image {
   width: 150px;
@@ -204,9 +250,8 @@ footer > div {
 
 }
 
+
 /* large desktop */
 @media screen and (min-width: 1200px) {
-  * {
 
-  }
 }
