@@ -16,14 +16,18 @@ li {
 }
 a {
   text-decoration: none;
+  color: black;
 }
 .bold {
   font-weight: bold;
 }
+.padding_top_big {
+  padding-top: 100px;
+}
 .padding_top_standard {
   padding-top: 40px;
 }
-.padding_top_standard {
+.padding_bottom_standard {
   padding-bottom: 40px;
 }
 .padding_left_standard {
@@ -32,7 +36,7 @@ a {
 .padding_top_small {
   padding-top: 20px;
 }
-.padding_top_small {
+.padding_bottom_small {
   padding-bottom: 20px;
 }
 .padding_left_small {
@@ -99,6 +103,36 @@ footer > div {
   margin-left: 200px;
   background-color: yellow;
 }
+.main_content_menu ul li {
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+.main_content_menu ul {
+  display: flex;
+  justify-content: center;
+}
+.main_content_boxes {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid green;
+}
+
+.main_content_box {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+}
+.main_content_image {
+  width: 150px;
+  height: 150px;
+  border: 1px solid red;
+}
+
+
+
 
 @media screen and (max-height: 400px) {
   .main_nav .main_nav_bottom {
