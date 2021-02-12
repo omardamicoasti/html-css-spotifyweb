@@ -6,6 +6,9 @@
 
 
 /* regole generali per la pagina*/
+body {
+  font-family: 'Montserrat', sans-serif;
+}
 .clearfix {
 	content: "";
 	display: table;
@@ -101,35 +104,71 @@ footer > div {
   width: calc(100% - 200px);
   height: calc(100% - 90px);
   margin-left: 200px;
-  background-color: yellow;
+  background-color: grey;
 }
 .main_content_menu ul li {
   text-transform: uppercase;
   margin: 0 10px;
 }
+.main_content_menu ul li a {
+  color: lightgrey;
+}
+
 .main_content_menu ul {
   display: flex;
   justify-content: center;
 }
+
 .main_content_boxes {
   display: flex;
-  justify-content: space-around;
-  border: 1px solid green;
+  flex-wrap: wrap;
 }
-
 .main_content_box {
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 1px solid black;
+  margin: 15px 15px;
 }
 .main_content_image {
   width: 150px;
   height: 150px;
   border: 1px solid red;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 10px;
 }
+
+#main_content_recent_image_1 {
+  background-image: url(../img/metal_lifting.jpg);
+}
+
+.main_content_recent h2, .main_content_recent h5,
+.main_content_created h2, .main_content_created h5,
+.main_content_popular h2, .main_content_popular h5 {
+  color: white;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.main_content_recent h2,
+.main_content_created h2,
+.main_content_popular h2 {
+  margin-left: 15px;
+}
+.main_content_recent p {
+  color: lightgrey;
+  font-size: 0.8em;
+  padding-top: 10px;
+}
+
+
+
+
+
+
 
 
 
