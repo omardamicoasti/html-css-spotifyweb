@@ -8,7 +8,7 @@
 /* regole generali per la pagina*/
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 13px;
+  font-size: 12px;
 }
 .clearfix {
 	content: "";
@@ -101,9 +101,14 @@ a {
   border: 1px solid white;
   border-radius: 25px;
   z-index: 999;
+  margin-right: 20px;
 }
 main .main_content .upgrade a {
   color: white;
+}
+.upgrade:hover {
+  transform: scale(1.5);
+  transition: 1s;
 }
 /* fine upgrade*/
 /* regole generali footer */
@@ -179,22 +184,23 @@ footer > div {
 /* fine footer */
 /* nav per smartphone*/
 .main_nav_only_icons {
-  width: 50px;
+  width: 80px;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.main_nav_only_icons p {
+.main_nav_only_icons a {
   padding-bottom: 10px;
 }
 .only_icons_upper, .only_icons_lower {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .only_icons_lower {
   justify-content: flex-end;
-}
-.main_nav_only_icons .only_icons_upper p, .only_icons_lower p:nth-child(2) {
-  font-size: 2em;
 }
 /* fine nav per smartphone*/
 /* nav */
@@ -206,20 +212,30 @@ footer > div {
   height: calc(100% - 90px);
   background-color: rgba(0,0,0,255);
 }
+.main_nav_top img, .main_nav_bottom img   {
+  width: 15%;
+  transform: translateY(+25%);
+  margin-right: 5px;
+}
+.main_nav_only_icons img {
+  width: 40%;
+  transform: translateX(+25%);
+}
 .main_nav, .main_nav a {
   color: lightgrey;
+}
+.main_nav a:hover {
+  color: white;
+  font-weight: bolder;
 }
 .main_nav li {
   text-transform: capitalize;
 }
-/* .main_nav div {
-  border: 1px solid white;
-} */
 .main_nav {
   padding-left: 10px;
 }
 .main_nav_top {
-  height: 180px;
+  height: 160px;
 }
 .main_nav_top_logo, .main_nav_top_menu {
   height: 50%;
@@ -227,18 +243,19 @@ footer > div {
 .main_nav_top_logo img {
   width: 80%;
 }
-.main_nav_top_menu ul li, .main_nav_center ul li, .main_nav_center p {
+.main_nav_center ul li, .main_nav_center p {
   padding-bottom: 15px;
 }
 .main_nav_center {
-  height: calc(100% - 180px - 65px);
+  height: calc(100% - 160px - 85px);
   overflow-y: auto;
 }
 .main_nav_bottom {
-  height: 65px;
+  height: 85px;
+  padding-bottom: 160px;
 }
 .main_nav_bottom p {
-  padding: 10px 0
+  padding-bottom: 5px;
 }
 /* fine nav */
 /* contenuto */
@@ -258,6 +275,10 @@ footer > div {
 .main_content_menu ul li a {
   color: lightgrey;
 }
+.main_content_menu ul li a:hover {
+  color: white;
+  font-weight: bolder;
+}
 .main_content_menu ul {
   display: flex;
   justify-content: center;
@@ -273,7 +294,6 @@ footer > div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* border: 1px solid white; */
   margin: 10px 10px;
 }
 .main_content_image {
@@ -315,27 +335,27 @@ footer > div {
 #main_content_popular_image_2 {
   background-image: url(../img/einaudi.jpeg);
 }
-.main_content_recent h2, .main_content_recent h5,
-.main_content_created h2, .main_content_created h5,
-.main_content_popular h2, .main_content_popular h5 {
+.main_content_recent h2, .main_content_recent h4,
+.main_content_created h2, .main_content_created h4,
+.main_content_popular h2, .main_content_popular h4 {
   color: white;
   text-transform: capitalize;
   font-weight: bold;
 }
 .main_content_recent p,
 .main_content_created p,
-.main_content_popular p
- {
+.main_content_popular p {
   text-transform: capitalize;
   color: lightgrey;
   font-size: 0.8em;
+  padding-top: 10px;
 }
 .main_content_recent h2,
 .main_content_created h2,
 .main_content_popular h2,
 .main_content_created p,
 .main_content_popular p {
-  margin-left: 20px;
+  margin-left: 25px;
 }
 .main_content_created p,
 .main_content_popular p {
@@ -345,7 +365,6 @@ footer > div {
 .main_content_popular .main_content_image {
   border-radius: 50%;
 }
-
 /* layover su album */
 .main_content_image {
   position: relative;
@@ -379,7 +398,7 @@ footer > div {
   z-index: 999;
 }
 .main_content_image {
-  font-size: 5em;
+  font-size: 6em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -387,11 +406,8 @@ footer > div {
 .main_content_box:hover .main_content_image a {
   visibility: visible;
 }
-
 /* fine layover su album */
-
-
-/* contenuto */
+/* fine contenuto */
 
 
 
@@ -401,12 +417,12 @@ footer > div {
 
 
 /* gestione scomparsa menu e area playlist */
-@media screen and (max-height: 400px) {
+@media screen and (max-height: 600px) {
   .main_nav .main_nav_bottom {
     display: none;
   }
   .main_nav .main_nav_center {
-    height: calc(100% - 180px);
+    height: calc(100% - 160px);
   }
 }
 /* smartphone */
