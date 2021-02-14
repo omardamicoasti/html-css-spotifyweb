@@ -5,6 +5,8 @@
 }
 
 
+
+
 /* regole generali per la pagina*/
 body {
   font-family: 'Montserrat', sans-serif;
@@ -131,7 +133,13 @@ footer div {
 footer > div {
   float: left;
   height: 100%;
-  width: calc(100% / 3);
+  /* width: calc(100% / 3); */
+}
+.footer_left, .footer_right {
+  width: 25%;
+}
+.footer_center {
+  width: 50%;
 }
 /* .footer_left, .footer_center, .footer_right {
   flex-wrap: nowrap;
@@ -144,6 +152,9 @@ footer > div {
   width: 60px;
   height: 60px;
   padding-right: 10px;
+}
+.footer_left, .footer_center, .footer_center_top, .footer_center_bottom, .footer_right {
+  flex-wrap: wrap;
 }
 .footer_left  {
   display: flex;
@@ -173,6 +184,20 @@ footer > div {
 .footer_center_top p, .footer_center_bottom p {
   padding: 0 30px;
 }
+.footer_center_bottom .lenght {
+  display: inline-block;
+  height: 5px;
+  width: 500px;
+  background-color: grey;
+  border-radius: 2.5px;
+  transform: translateY(-2.5px);
+}
+.footer_center_bottom .lenght_point {
+  height: 100%;
+  width: 5%;
+  background-color: lightgrey;
+  border-radius: 2.5px;
+}
 .footer_right  {
   display: flex;
   justify-content: flex-end;
@@ -180,6 +205,20 @@ footer > div {
 }
 .footer_right p {
   padding-right: 30px;
+}
+.footer_right .volume {
+  display: inline-block;
+  height: 5px;
+  width: 150px;
+  background-color: grey;
+  border-radius: 2.5px;
+  transform: translateY(-2.5px);
+}
+.footer_right .volume_level {
+  height: 100%;
+  width: 30%;
+  background-color: lightgrey;
+  border-radius: 2.5px;
 }
 /* fine footer */
 /* nav per smartphone*/
@@ -289,17 +328,16 @@ footer > div {
   flex-wrap: wrap;
 }
 .main_content_box {
-  width: 220px;
-  height: 220px;
+  width: 250px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px 10px;
+  margin: 10px 0px;
 }
 .main_content_image {
-  width: 190px;
-  height: 190px;
-  /* border: 1px solid red; */
+  width: 220px;
+  height: 220px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -458,4 +496,5 @@ footer > div {
   .main_nav_only_icons {
     display: none;
   }
+  
 }
