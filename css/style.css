@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 /* regole generali per la pagina*/
 body {
   font-family: 'Montserrat', sans-serif;
@@ -324,6 +323,11 @@ footer > div {
   margin-left: 200px;
   background-color: rgba(20,25,34,255);
   padding-bottom: 70px;
+}
+.main_content_menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .main_content_menu ul li {
   text-transform: uppercase;
